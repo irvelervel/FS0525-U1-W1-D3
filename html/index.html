@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gli stili in CSS</title>
     <!-- 3) COLLEGAMENTO FILE CSS ESTERNO -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <!-- ./ vuol dire CARTELLA CORRENTE -->
+    <!-- ../ vuol dire CARTELLA SUPERIORE -->
     <!-- 2) CSS EMBEDDED (INCORPORATO) -->
     <!-- creando un tag <style> all'interno di <head> riusciamo a definire
-        in maniera ordinata delle coppie selettore-regole in CSS -->
+      in maniera ordinata delle coppie selettore-regole in CSS -->
     <!-- il vero svantaggio di questa metodologia è il fatto che 
-         stiamo sempre lavorando su UN documento HTML alla volta -->
+      stiamo sempre lavorando su UN documento HTML alla volta -->
     <style>
       a {
         /* a vuol dire: TUTTE LE <a> NEL DOCUMENTO */
@@ -38,7 +40,7 @@
       </nav>
     </header>
     <main>
-      <p>
+      <p id="first-paragraph">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nobis
         voluptate ratione, saepe, libero perferendis fuga, recusandae alias sit
         incidunt quidem! Tenetur, quidem natus vel explicabo non aliquid
@@ -53,11 +55,13 @@
         exercitationem, delectus cum laborum fuga illo est labore vel distinctio
         accusantium ullam molestias!
       </p>
+      <!-- ricordiamoci inoltre che gli stili inline hanno MASSIMA PRIORITÀ
+       e "barano" superando in importanza le altre metodologie -->
       <h3>BEST PIZZAS</h3>
       <ol>
         <li>Capricciosa</li>
-        <li>Marinara</li>
-        <li>Contadina</li>
+        <li class="special-li">Marinara</li>
+        <li class="special-li">Contadina</li>
       </ol>
     </main>
     <footer>

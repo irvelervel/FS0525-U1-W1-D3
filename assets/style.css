@@ -1,0 +1,48 @@
+/* 3) FOGLIO CSS SEPARATO */
+/* Creare un foglio di stile totalmente separato è la soluzione migliore:
+vi permette di mantenere ordinato il codice degli stili e potenzialmente
+potete allegarlo a MULTIPLI documenti HTML */
+
+p {
+  /* dovrebbe selezionare tutti i P nel documento! */
+  font-style: italic; /* corsivo */
+}
+
+/* ricordatevi sempre di COLLEGARE il foglio di stile al documento HTML
+interessato */
+
+footer p {
+  /* questo selettore va a selezionare solamente i paragrafi DENTRO footer */
+  font-style: normal;
+}
+
+main h3 {
+  color: red;
+}
+
+h3 {
+  color: blue;
+}
+/* vince color: blue perchè i due selettore h3 hanno lo stesso punteggio (1) */
+/* quando due regole vanno in sovrapposizione vince la regola che ha il selettore
+più specifico (che ha il punteggio più alto) e in caso di pareggio vince
+l'ultima regola applicata */
+
+/* ALTRI TIPI DI SELETTORI */
+/* CLASSI */
+/* applica una parola chiave ripetibile per isolare determinati elementi nella pagina */
+.special-li {
+  font-weight: bold; /* testo in grassetto */
+  color: orange;
+}
+/* prendi tutti gli elementi dotati di classe "special-li */
+
+li {
+  color: black;
+}
+
+/* ID */
+/* applica un MIRINO univoco per UN elemento nella pagina */
+#first-paragraph {
+  border: 2px dashed red;
+}
