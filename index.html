@@ -4,6 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gli stili in CSS</title>
+    <!-- 3) COLLEGAMENTO FILE CSS ESTERNO -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- 2) CSS EMBEDDED (INCORPORATO) -->
+    <!-- creando un tag <style> all'interno di <head> riusciamo a definire
+        in maniera ordinata delle coppie selettore-regole in CSS -->
+    <!-- il vero svantaggio di questa metodologia è il fatto che 
+         stiamo sempre lavorando su UN documento HTML alla volta -->
+    <style>
+      a {
+        /* a vuol dire: TUTTE LE <a> NEL DOCUMENTO */
+        text-decoration: none;
+        /* text-decoration: none RIMUOVE una sottolineatura preesistente */
+      }
+    </style>
   </head>
   <body>
     <!-- da oggi in poi struttureremo i nostri contenuti nei 3
@@ -14,8 +28,40 @@
         senza bisogno del selettore (perchè stiamo già lavorando sul
         tag interessato) -->
       <h1 style="color: purple; font-size: 1.5em">CSS BASICS</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Corsi</a></li>
+          <li><a href="#">Docenti</a></li>
+          <li><a href="#">Contatti</a></li>
+        </ul>
+      </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nobis
+        voluptate ratione, saepe, libero perferendis fuga, recusandae alias sit
+        incidunt quidem! Tenetur, quidem natus vel explicabo non aliquid
+        consequatur ut.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque magnam
+        minima porro dolorem est quidem enim vitae totam numquam sapiente?
+        Sapiente illo eaque quaerat ad laboriosam inventore fuga asperiores!
+        Blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Excepturi quidem ducimus assumenda nihil obcaecati enim mollitia ipsam
+        exercitationem, delectus cum laborum fuga illo est labore vel distinctio
+        accusantium ullam molestias!
+      </p>
+      <h3>BEST PIZZAS</h3>
+      <ol>
+        <li>Capricciosa</li>
+        <li>Marinara</li>
+        <li>Contadina</li>
+      </ol>
+    </main>
+    <footer>
+      <p>EPICODE - 2025</p>
+    </footer>
   </body>
 </html>
