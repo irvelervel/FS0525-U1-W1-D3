@@ -46,3 +46,33 @@ li {
 #first-paragraph {
   border: 2px dashed red;
 }
+
+#second-paragraph {
+  font-size: 20px;
+}
+
+#second-paragraph span {
+  /* gli span dentro second-paragraph */
+  font-size: 1rem; /* 16px */
+  /* color: lightsalmon; */
+  /* color: rgb(237, 67, 177); */
+  color: #d88b8b;
+}
+
+h3 {
+  text-align: center;
+}
+
+ol li {
+  /* prendo solo gli <li> dentro le <ol> */
+}
+
+footer h6 {
+  /* prende gli h6 che sono figli A QUALSIASI LIVELLO di footer */
+  /* seleziona in totale 2 h6 */
+}
+
+footer > h6 {
+  /* prende solo gli h6 che sono figli DIRETTI di footer */
+  /* seleziona in totale 1 h6 */
+}
